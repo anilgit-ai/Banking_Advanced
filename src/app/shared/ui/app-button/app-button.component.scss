@@ -1,0 +1,39 @@
+@use "../../../../styles/abstracts/variables" as *;
+
+.app-button {
+  border: none;
+
+  border-radius: $border-radius-md;
+
+  padding: $spacing-sm $spacing-lg;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+
+  &--primary {
+    background-color: $color-primary;
+
+    color: $color-white;
+  }
+
+  &--secondary {
+    background-color: $color-gray-500;
+
+    color: $color-white;
+  }
+
+  &--danger {
+    background-color: $color-danger;
+
+    color: $color-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+  }
+}

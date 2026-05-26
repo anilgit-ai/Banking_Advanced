@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+html,
+body {
+  min-height: 100%;
+  background-color: $color-gray-100;
+}
+
+body {
+  overflow-x: hidden;
+}

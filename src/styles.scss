@@ -1,0 +1,20 @@
+/*
+|--------------------------------------------------------------------------
+| Enterprise Global Styles Entry Point
+|--------------------------------------------------------------------------
+*/
+
+@use "./styles/abstracts/variables";
+@use "./styles/abstracts/mixins";
+@use "./styles/abstracts/functions";
+@use "./styles/abstracts/placeholders";
+
+@use "./styles/base/reset";
+@use "./styles/base/typography";
+@use "./styles/base/global";
+
+@use "./styles/themes/theme";
+
+@use "./styles/utilities/spacing";
+@use "./styles/utilities/helpers";
+@use "./styles/utilities/flex"; /* You can add global styles to this file, and also import other style files */

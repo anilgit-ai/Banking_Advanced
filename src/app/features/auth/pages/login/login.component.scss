@@ -1,0 +1,29 @@
+@use "../../../../../styles/abstracts/variables" as *;
+
+.login-page {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  &__card {
+    width: 400px;
+
+    background-color: $color-white;
+
+    padding: $spacing-xl;
+
+    border-radius: $border-radius-lg;
+
+    box-shadow: $shadow-md;
+  }
+
+  &__title {
+    margin-bottom: $spacing-lg;
+
+    text-align: center;
+  }
+}

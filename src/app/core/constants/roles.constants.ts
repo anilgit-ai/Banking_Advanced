@@ -1,0 +1,12 @@
+/*
+|--------------------------------------------------------------------------
+| Enterprise RBAC Roles
+|--------------------------------------------------------------------------
+*/
+
+export enum USER_ROLE {
+  CUSTOMER = 'CUSTOMER',
+  EMPLOYEE = 'EMPLOYEE',
+  MANAGER = 'MANAGER',
+  ADMIN = 'ADMIN',
+}

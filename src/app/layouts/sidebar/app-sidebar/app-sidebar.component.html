@@ -1,0 +1,17 @@
+<aside class="app-sidebar" [class.app-sidebar--closed]="!isOpen">
+  <nav class="app-sidebar__nav">
+    @for (item of menuItems; track item.route) {
+      <a
+        class="app-sidebar__link"
+        [routerLink]="item.route"
+        routerLinkActive="app-sidebar__link--active"
+      >
+        <i [class]="item.icon"></i>
+
+        <span>
+          {{ item.label }}
+        </span>
+      </a>
+    }
+  </nav>
+</aside>

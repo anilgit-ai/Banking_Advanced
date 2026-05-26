@@ -1,0 +1,15 @@
+<div class="accounts-page">
+  <app-card title="Total Balance">
+    <h2>
+      {{ accountsStore.totalBalance() | currency: "INR" }}
+    </h2>
+  </app-card>
+
+  @if (accountsStore.loading()) {
+    <app-loader />
+  } @else if (accountsStore.accounts().length) {
+    <app-accounts-list [accounts]="accountsStore.accounts()" />
+  } @else {
+    <app-empty-state message="No accounts found" />
+  }
+</div>

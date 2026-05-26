@@ -1,0 +1,19 @@
+@use "../../../../styles/abstracts/variables" as *;
+
+.empty-state {
+  text-align: center;
+
+  padding: $spacing-xl;
+
+  color: $color-gray-500;
+
+  &__icon {
+    font-size: 3rem;
+
+    margin-bottom: $spacing-md;
+  }
+
+  &__message {
+    font-size: $font-size-md;
+  }
+}

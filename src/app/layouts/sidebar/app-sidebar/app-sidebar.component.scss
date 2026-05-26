@@ -1,0 +1,53 @@
+@use "../../../../styles/abstracts/variables" as *;
+
+.app-sidebar {
+  width: $sidebar-width;
+
+  background-color: $color-secondary;
+
+  color: $color-white;
+
+  min-height: 100vh;
+
+  transition: width 0.3s ease;
+
+  overflow: hidden;
+
+  &--closed {
+    width: 62px;
+  }
+
+  &__nav {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: $spacing-md;
+  }
+
+  &__link {
+    display: flex;
+
+    align-items: center;
+
+    gap: $spacing-md;
+
+    color: $color-white;
+
+    text-decoration: none;
+
+    padding: $spacing-md;
+
+    border-radius: $border-radius-md;
+
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
