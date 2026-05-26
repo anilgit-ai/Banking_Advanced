@@ -1,0 +1,52 @@
+@use "../../../../styles/abstracts/variables" as *;
+
+.app-table-wrapper {
+  overflow-x: auto;
+}
+
+.app-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background-color: $color-white;
+
+  border-radius: $border-radius-lg;
+
+  overflow: hidden;
+
+  th,
+  td {
+    padding: 1rem;
+
+    text-align: left;
+
+    border-bottom: 1px solid $color-gray-200;
+  }
+
+  th {
+    background-color: $color-gray-100;
+
+    font-weight: 600;
+  }
+
+  tbody tr:hover {
+    background-color: $color-gray-100;
+  }
+
+  &__actions {
+    display: flex;
+
+    gap: 0.5rem;
+  }
+
+  &__action-button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: $color-primary;
+  }
+}

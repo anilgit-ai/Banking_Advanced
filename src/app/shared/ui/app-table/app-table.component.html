@@ -1,0 +1,47 @@
+<div class="app-table-wrapper">
+  <table class="app-table">
+    <thead>
+      <tr>
+        @for (column of columns; track column.key) {
+          <th>
+            {{ column.header }}
+          </th>
+        }
+
+        @if (actions.length) {
+          <th>Actions</th>
+        }
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (row of data; track $index) {
+        <tr>
+          @for (column of columns; track column.key) {
+            <td>
+              {{ row[column.key] }}
+            </td>
+          }
+
+          @if (actions.length) {
+            <td>
+              <div class="app-table__actions">
+                @for (action of actions; track action.label) {
+                  <button
+                    type="button"
+                    class="app-table__action-button"
+                    (click)="action.action(row)"
+                  >
+                    <i [class]="action.icon"></i>
+
+                    {{ action.label }}
+                  </button>
+                }
+              </div>
+            </td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

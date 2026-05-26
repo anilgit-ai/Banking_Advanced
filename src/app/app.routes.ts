@@ -77,6 +77,14 @@ export const appRoutes: Routes = [
           animation: 'AccountsPage',
         },
       },
+      {
+        path: ROUTES.APP.TRANSACTIONS,
+
+        loadChildren: () =>
+          import('./features/transactions/transactions.routes').then(
+            (routes) => routes.transactionsRoutes,
+          ),
+      },
     ],
   },
 
